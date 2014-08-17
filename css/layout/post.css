@@ -1,0 +1,12 @@
+.Post .Post-date {
+  color: #747474;
+  float: right;
+  font-size: 14px;
+  line-height: 42px;
+}
+
+.Post .Post-title {
+  border-bottom: 1px solid #E1E1E1;
+  margin: 0 0 6px;
+  padding: 0 0 6px;
+}

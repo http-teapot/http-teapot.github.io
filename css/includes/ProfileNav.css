@@ -16,17 +16,17 @@
 
 .ProfileSidebar .ProfileSidebar-image {
   background-color: #33393d;
-  border-radius: 70px;
+  border-radius: 100px;
   display: block;
-  margin: 16px auto;
+  margin: 16px auto 0;
   overflow: hidden;
-  padding: 8px 8px 0;
+  padding: 8px;
   position: relative;
   width: 100px;
 }
 
 .ProfileSidebar .ProfileSidebar-image img {
-  border-radius: 70px;
+  border-radius: 100px;
   display: block;
   width: 100%;
 }
