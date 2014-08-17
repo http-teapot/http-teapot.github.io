@@ -1,30 +1,39 @@
-<aside class="ProfileSidebar">
+<header class="ProfileSidebar" id="ProfileSidebar">
   <div class="ProfileSidebar-image">
     <img src="/images/picture.jpeg" />
   </div>
+
+  <a id="ProfileSidebar-hamburger" class="ProfileSidebar-hamburger" href="#"><i class="fa fa-bars"></i></a>
+
   <div class="ProfileSidebar-name">Thomas Potaire</div>
 
-  <div class="ProfileSidebar-username" href="https://twitter.com/teapot">Also known as Teapot</div>
+  <div class="ProfileSidebar-username" href="https://twitter.com/teapot">Teapot</div>
 
   <ul class="ProfileSidebar-profiles">
     <li class="ProfileSidebar-profiles-item ProfileSidebar-profiles-item--github">
       <a class="ProfileSidebar-profiles-item-link" href="https://github.com/http-teapot" title="http-teapot">
-        <i class="fa fa-github"></i> http-teapot
+        <i class="fa fa-github"></i> <span>http-teapot</span>
       </a>
     </li>
     <li class="ProfileSidebar-profiles-item ProfileSidebar-profiles-item--twitter">
       <a class="ProfileSidebar-profiles-item-link" href="https://twitter.com/teapot" title="teapot">
-        <i class="fa fa-twitter"></i> teapot
+        <i class="fa fa-twitter"></i> <span>teapot</span>
       </a>
     </li>
     <li class="ProfileSidebar-profiles-item ProfileSidebar-profiles-item--stackoverflow">
       <a class="ProfileSidebar-profiles-item-link" href="http://stackoverflow.com/users/2155387/thomas-potaire" title="thomaspotaire">
-        <i class="fa fa-stack-overflow"></i> thomaspotaire
+        <i class="fa fa-stack-overflow"></i> <span>thomaspotaire</span>
       </a>
     </li>
   </ul>
-  <!-- <nav class="ProfileSidebar-navigation">
-    <ul>
-      <li>
-  </nav> -->
-</aside>
+  <nav class="ProfileSidebar-posts">
+    <h4>Latest posts</h4>
+    <ul class="ProfileSidebar-posts-list">
+      {% for post in site.posts %}
+        <li class="ProfileSidebar-posts-list-item">
+          <a class="ProfileSidebar-posts-list-item-link" href="{{ post.url }}">{{ post.title }}</a> on {{ post.date|date: "%b %d, %Y" }}
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+</header>

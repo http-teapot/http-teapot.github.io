@@ -23,9 +23,12 @@ h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 100;
+}
+
 h1, h2 {
   font-size: 28px;
-  font-weight: 100;
 }
 
 h1 {
@@ -53,13 +56,13 @@ h6 {
 }
 
 p {
-  margin: 4px 0;
+  margin: 12px 0;
 }
 
 .Layout.Layout--default .ProfileSidebar {
   height: 100%;
   position: fixed;
-  width: 26%;
+  width: 35%;
 }
 
 .Layout.Layout--default .ProfileSidebar .ProfileSidebar-profiles {
@@ -67,7 +70,52 @@ p {
   bottom: 10px;
 }
 
-.Layout.Layout--default .Content {
-  margin-left: 26%;
+.Layout.Layout--default .Content,
+.Layout.Layout--default .Footer {
+  margin-left: 35%;
   padding: 32px;
+}
+
+.Layout.Layout--default .Footer {
+  padding-top: 0;
+}
+
+.Layout.Layout--default .Footer {
+  color: #636363;
+  font-size: 12px;
+  text-align: center;
+}
+
+@media (min-width: 1048px) {
+  .Layout.Layout--default .ProfileSidebar {
+    width: 25%;
+  }
+
+  .Layout.Layout--default .Content,
+  .Layout.Layout--default .Footer {
+    margin-left: 25%;
+    padding: 64px;
+  }
+
+  .Layout.Layout--default .Footer {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .Layout.Layout--default .ProfileSidebar,
+  .Layout.Layout--default .Content {
+    position: static;
+    width: auto;
+  }
+
+  .Layout.Layout--default .ProfileSidebar .ProfileSidebar-profiles {
+    position: static;
+  }
+
+  .Layout.Layout--default .Content,
+  .Layout.Layout--default .Footer {
+    margin-left: 0;
+    padding: 20px;
+  }
 }
