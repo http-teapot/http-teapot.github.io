@@ -1,0 +1,70 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  letter-spacing: 0.06em;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #e56e6d;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-weight: 200;
+  line-height: 1.25;
+}
+
+h1, h2, h3 {
+  margin: 10px 0 4px;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 100;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  font-size: 12px;
+}
+
+p {
+  margin: 4px 0;
+}
+
+.Layout.Layout--default .ProfileSidebar {
+  height: 100%;
+  position: fixed;
+  width: 30%;
+}
+
+.Layout.Layout--default .ProfileSidebar .ProfileSidebar-profiles {
+  position: absolute;
+  bottom: 10px;
+}
+
+.Layout.Layout--default .Content {
+  margin-left: 30%;
+  padding: 18px;
+}

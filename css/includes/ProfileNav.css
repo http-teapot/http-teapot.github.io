@@ -1,0 +1,116 @@
+.ProfileSidebar {
+  background-color: #33393d;
+  color: #f4f4f4;
+  font-weight: 100;
+  position: relative;
+}
+
+.ProfileSidebar:before {
+  background-color: #222;
+  border-bottom: 1px solid #454545;
+  content: ' ';
+  height: 73px;
+  position: absolute;
+  width: 100%;
+}
+
+.ProfileSidebar .ProfileSidebar-image {
+  background-color: #33393d;
+  border-radius: 70px;
+  display: block;
+  margin: 16px auto;
+  overflow: hidden;
+  padding: 8px 8px 0;
+  position: relative;
+  width: 100px;
+}
+
+.ProfileSidebar .ProfileSidebar-image img {
+  border-radius: 70px;
+  display: block;
+  width: 100%;
+}
+
+.ProfileSidebar .ProfileSidebar-image:after,
+.ProfileSidebar .ProfileSidebar-image:before {
+  border: 1px solid #454545;
+  content: ' ';
+  left: 0;
+  position: absolute;
+  right: 0;
+}
+
+.ProfileSidebar .ProfileSidebar-image:after {
+  border-bottom: 0;
+  border-radius: 100px 100px 0 0;
+  bottom: 50%;
+  top: 0;
+}
+
+.ProfileSidebar .ProfileSidebar-image:before {
+  border-color: rgba(0, 0, 0, 0.1);
+  border-radius: 100px;
+  bottom: 8px;
+  left: 8px;
+  right: 8px;
+  top: 8px;
+}
+
+.ProfileSidebar .ProfileSidebar-name {
+  font-size: 22px;
+  letter-spacing: 0.1em;
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+  position: relative;
+  text-align: center;
+}
+
+.ProfileSidebar .ProfileSidebar-name:before {
+  background-color: #858585;
+  bottom: 0;
+  content: ' ';
+  height: 1px;
+  left: 40%;
+  position: absolute;
+  right: 40%;
+}
+
+.ProfileSidebar .ProfileSidebar-username {
+  display: block;
+  font-size: 13px;
+  margin-top: 4px;
+  opacity: 0.5;
+  text-align: center;
+}
+
+.ProfileSidebar .ProfileSidebar-profiles {
+  color: #fff;
+  font-size: 12px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.ProfileSidebar .ProfileSidebar-profiles .ProfileSidebar-profiles-item {
+  display: inline-block;
+  line-height: 20px;
+  margin: 4px 5px;
+}
+
+.ProfileSidebar .ProfileSidebar-profiles .ProfileSidebar-profiles-item .ProfileSidebar-profiles-item-link {
+  color: #f4f4f4;
+  transition: color 0.15s;
+}
+
+.ProfileSidebar .ProfileSidebar-profiles .ProfileSidebar-profiles-item .ProfileSidebar-profiles-item-link:hover {
+  color: #e56e6d;
+  text-decoration: none;
+}
+
+.ProfileSidebar .ProfileSidebar-profiles .ProfileSidebar-profiles-item .ProfileSidebar-profiles-item-link .fa {
+  display: inline-block;
+  font-size: 20px;
+  vertical-align: bottom;
+}
