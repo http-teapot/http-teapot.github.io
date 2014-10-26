@@ -2,14 +2,26 @@ body {
   background-color: #f9f9f9;
   color: #141414;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 200;
+  font-weight: 300;
   letter-spacing: 0.06em;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
+/*
+ * BODY
+ */
+body {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/*
+ * LINK
+ */
 a {
-  color: #e56e6d;
+  color: #366fd1;
   text-decoration: none;
 }
 
@@ -17,62 +29,129 @@ a:hover {
   text-decoration: underline;
 }
 
-h1, h2, h3, h4, h5, h6, p {
-  font-weight: 200;
-  line-height: 1.25;
-  margin: 0;
-}
-
+/*
+ * TITLE
+ */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 100;
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 30px 0 10px;
 }
 
-h1, h2 {
-  font-size: 28px;
+
+h1 + h1, h1 + h2, h1 + h3, h1 + h4, h1 + h5, h1 + h6,
+h2 + h1, h2 + h2, h2 + h3, h2 + h4, h2 + h5, h2 + h6,
+h3 + h1, h3 + h2, h3 + h3, h3 + h4, h3 + h5, h3 + h6,
+h4 + h1, h4 + h2, h4 + h3, h4 + h4, h4 + h5, h4 + h6,
+h5 + h1, h5 + h2, h5 + h3, h5 + h4, h5 + h5, h5 + h6,
+h6 + h1, h6 + h2, h6 + h3, h6 + h4, h6 + h5, h6 + h6 {
+  margin: 10px 0;
 }
 
 h1 {
-  font-size: 34px;
+  font-size: 2.4em;
 }
 
 h2 {
-  font-size: 28px;
+  font-size: 2em;
 }
 
 h3 {
-  font-size: 22px;
+  font-size: 1.6em;
 }
 
 h4 {
-  font-size: 18px;
+  font-size: 1.4em;
 }
 
 h5 {
-  font-size: 14px;
+  font-size: 1.2em;
 }
 
 h6 {
-  font-size: 12px;
+  font-size: 1.1em;
 }
 
-p {
-  margin: 12px 0;
+/*
+ * PARAGRAPH, BLOCKQUOTE, PRE, LIST
+ */
+blockquote,
+blockquote cite,
+ol,
+p,
+pre,
+ul {
+  margin: 10px 0;
 }
 
-.Layout.Layout--default .ProfileSidebar {
-  height: 100%;
-  position: fixed;
-  width: 35%;
+/*
+ * BLOCKQUOTE
+ */
+blockquote {
+  border-left: 4px solid #bbb;
+  padding: 1px 14px;
 }
 
-.Layout.Layout--default .ProfileSidebar .ProfileSidebar-profiles {
+blockquote cite {
+  display: block;
+}
+
+blockquote cite:before {
+  content: '— ';
+}
+
+/*
+ * LIST
+ */
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+  margin: 0;
+}
+
+ul {
+  list-style: disc;
+  padding: 0 0 0 26px;
+}
+
+ol {
+  list-style: decimal;
+}
+
+ol ul,
+ul ul {
+  padding: 0 0 0 18px;
+}
+
+ul ol,
+ol ol {
+  padding: 0 0 0 34px;
+}
+
+ul li,
+ol li {
+  margin: 5px 0;
+}
+
+.Title {
+  margin-top: 70px;
+  padding-top: 70px;
+  position: relative;
+}
+
+.Title:before {
+  border-top: 4px solid #eaeaea;
+  content: ' ';
+  margin-left: -60px;
+  left: 50%;
   position: absolute;
-  bottom: 10px;
+  top: 0;
+  width: 120px;
 }
 
 .Layout.Layout--default .Content,
 .Layout.Layout--default .Footer {
-  margin-left: 35%;
   padding: 32px;
 }
 
@@ -86,36 +165,32 @@ p {
   text-align: center;
 }
 
-@media (min-width: 1048px) {
-  .Layout.Layout--default .ProfileSidebar {
-    width: 25%;
-  }
-
-  .Layout.Layout--default .Content,
-  .Layout.Layout--default .Footer {
-    margin-left: 25%;
-    padding: 64px;
-  }
-
-  .Layout.Layout--default .Footer {
-    padding-top: 0;
-  }
+.Picture {
+  border-radius: 250px;
+  margin-top: 30px;
+  width: 250px;
 }
 
-@media (max-width: 800px) {
-  .Layout.Layout--default .ProfileSidebar,
-  .Layout.Layout--default .Content {
-    position: static;
-    width: auto;
-  }
+.Teapotio-logo,
+.Teapotio-symfonyLogo,
+.TwitterLogo {
+  margin-top: 15px;
+  width: 100px;
+}
 
-  .Layout.Layout--default .ProfileSidebar .ProfileSidebar-profiles {
-    position: static;
-  }
+.Teapotio {
+  color: #343434;
+  font-size: 80px;
+  line-height: 1;
+}
 
-  .Layout.Layout--default .Content,
-  .Layout.Layout--default .Footer {
-    margin-left: 0;
-    padding: 20px;
-  }
+.Teapotio > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.ExternalLinkIcon {
+  display: inline-block;
+  font-size: 2em;
+  vertical-align: middle;
 }

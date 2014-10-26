@@ -1,30 +1,13 @@
 .ProfileSidebar {
-  background-color: #33393d;
-  color: #f4f4f4;
   font-weight: 100;
   position: relative;
 }
 
-.ProfileSidebar:before {
-  background-color: #222;
-  border-bottom: 1px solid #454545;
-  content: ' ';
-  height: 73px;
-  position: absolute;
-  width: 100%;
-}
-
-.ProfileSidebar .ProfileSidebar-hamburger {
-  display: none;
-}
-
 .ProfileSidebar .ProfileSidebar-image {
-  background-color: #33393d;
   border-radius: 100px;
   display: block;
   margin: 16px auto 0;
   overflow: hidden;
-  padding: 8px;
   position: relative;
   width: 100px;
 }
@@ -60,145 +43,25 @@
   top: 8px;
 }
 
-.ProfileSidebar .ProfileSidebar-name {
-  font-size: 22px;
-  letter-spacing: 0.1em;
-  margin-bottom: 8px;
-  padding-bottom: 8px;
-  position: relative;
-  text-align: center;
-}
-
-.ProfileSidebar .ProfileSidebar-name:before {
-  background-color: #858585;
-  bottom: 0;
-  content: ' ';
-  height: 1px;
-  left: 40%;
-  position: absolute;
-  right: 40%;
-}
-
-.ProfileSidebar .ProfileSidebar-username {
-  display: block;
-  font-size: 13px;
-  margin-top: 4px;
-  opacity: 0.5;
-  text-align: center;
-}
-
-.ProfileSidebar .ProfileSidebar-posts {
-  margin: 16px 20px;
-}
-
-.ProfileSidebar .ProfileSidebar-posts-list {
-  list-style: none;
-  margin: 8px 0;
-  padding-left: 14px;
-}
-
-.ProfileSidebar .ProfileSidebar-posts-list-item {
-  font-size: 12px;
-  margin-bottom: 5px;
-}
-
-.ProfileSidebar .ProfileSidebar-posts-list-item-link {
-  font-size: 14px;
-}
-
 .ProfileSidebar .ProfileSidebar-profiles {
-  color: #fff;
-  font-size: 12px;
   list-style: none;
   padding: 0;
   margin: 0;
   text-align: center;
-  width: 100%;
 }
 
 .ProfileSidebar .ProfileSidebar-profiles .ProfileSidebar-profiles-item {
   display: inline-block;
-  line-height: 20px;
+  font-size: 40px;
   margin: 4px 5px;
 }
 
-.ProfileSidebar .ProfileSidebar-hamburger,
 .ProfileSidebar .ProfileSidebar-profiles .ProfileSidebar-profiles-item .ProfileSidebar-profiles-item-link {
-  color: #f4f4f4;
   transition: color 0.15s;
 }
 
-.ProfileSidebar .ProfileSidebar-hamburger:hover,
 .ProfileSidebar .ProfileSidebar-profiles .ProfileSidebar-profiles-item .ProfileSidebar-profiles-item-link:hover {
-  color: #e56e6d;
   text-decoration: none;
 }
 
-.ProfileSidebar .ProfileSidebar-profiles .ProfileSidebar-profiles-item .ProfileSidebar-profiles-item-link .fa {
-  display: inline-block;
-  font-size: 20px;
-  vertical-align: bottom;
-}
-
-@media (max-width: 800px) {
-  .ProfileSidebar:before,
-  .ProfileSidebar .ProfileSidebar-image:after,
-  .ProfileSidebar .ProfileSidebar-image:before {
-    content: '';
-    display: none;
-  }
-
-  .ProfileSidebar .ProfileSidebar-name,
-  .ProfileSidebar .ProfileSidebar-username {
-    display: none;
-  }
-
-  .ProfileSidebar .ProfileSidebar-hamburger,
-  .ProfileSidebar .ProfileSidebar-image,
-  .ProfileSidebar .ProfileSidebar-profiles {
-    display: inline-block;
-    vertical-align: top;
-    width: auto;
-  }
-
-  .ProfileSidebar .ProfileSidebar-image {
-    margin: 0;
-    padding: 5px;
-    width: 40px;
-  }
-
-  .ProfileSidebar .ProfileSidebar-image img {
-    border: 1px solid #696969;
-  }
-
-  .ProfileSidebar .ProfileSidebar-profiles {
-    float: right;
-  }
-
-  .ProfileSidebar .ProfileSidebar-hamburger,
-  .ProfileSidebar .ProfileSidebar-profiles .ProfileSidebar-profiles-item {
-    margin: 6px 12px 6px 0;
-  }
-
-  .ProfileSidebar .ProfileSidebar-posts {
-    display: none;
-  }
-
-  .ProfileSidebar.is-expanded .ProfileSidebar-posts {
-    display: block;
-  }
-
-  .ProfileSidebar .ProfileSidebar-profiles .ProfileSidebar-profiles-item .ProfileSidebar-profiles-item-link {
-    display: block;
-  }
-
-  .ProfileSidebar .ProfileSidebar-hamburger .fa,
-  .ProfileSidebar .ProfileSidebar-profiles .ProfileSidebar-profiles-item .ProfileSidebar-profiles-item-link .fa {
-    font-size: 26px;
-    line-height: 40px;
-  }
-
-  .ProfileSidebar .ProfileSidebar-profiles .ProfileSidebar-profiles-item .ProfileSidebar-profiles-item-link span {
-    display: none;
-  }
-}
+.ProfileSidebar-profiles-item .ProfileSidebar-profiles-item--stackoverflow

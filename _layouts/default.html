@@ -5,20 +5,16 @@
   <meta charset="utf-8">
 
   <title>{{ page.title }} - Thomas Potaire</title>
-  <meta name="description" content="The HTML5 Herald">
   <link rel="stylesheet" href="/css/libraries/fontawesome/font-awesome.css">
   <link rel="stylesheet" href="/css/layout/default.css">
-  <link rel="stylesheet" href="/css/layout/post.css">
-  <link rel="stylesheet" href="/css/includes/ProfileNav.css">
 </head>
 
 <body class="Layout Layout--default">
-  {% include ProfileNav.html %}
   <section class="Content">
     {{ content }}
   </section>
   <footer class="Footer">
-    Copyright &copy; {{ "now"|date: "%Y" }} Thomas Potaire
+    Copywrong &copy; {{ "now"|date: "%Y" }} Thomas Potaire
   </footer>
   <script src="/js/includes/ProfileNav.js"></script>
 </body>
