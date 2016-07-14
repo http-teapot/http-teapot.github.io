@@ -1,0 +1,39 @@
+
+body p,
+body ul {
+  font-size: 1.4em;
+  margin: 24px auto;
+  max-width: 600px;
+  text-align: left;
+}
+
+/*body p:first-letter {
+  font-size: 3.2em;
+  float: left;
+  font-weight: 400;
+  line-height: 1em;
+}*/
+
+.Pictures {
+  text-align: center;
+}
+
+.Pictures img {
+  display: inline-block;
+  height: 350px;
+  margin: 10px;
+}
+
+.Map {
+  display: inline-block;
+  margin-right: 10%;
+  width: 35%;
+}
+
+.Map:last-child {
+  margin-right: 0;
+}
+
+.Map iframe {
+  width: 100%;
+}
