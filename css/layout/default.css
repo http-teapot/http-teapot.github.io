@@ -46,7 +46,8 @@ body {
 
 .Teapotio-logo,
 .Teapotio-symfonyLogo,
-.TwitterLogo {
+.TwitterLogo,
+.PlanLogo {
   margin: 15px 0;
   width: 100px;
 }
