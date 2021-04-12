@@ -10015,6 +10015,7 @@ a .w-rte-editable:not([contenteditable="true"]) {
     iframe.className = "recess-booking";
     iframe.frameBorder = 0;
     iframe.src = "https://" + slug + "-staging.myinstructors.live/embed/checkout/schedule";
+    iframe.referrerPolicy = "origin";
     document.body.append(iframe);
   }
 </script>
